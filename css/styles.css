@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Atkinson+Hyperlegible&family=Chango&family=Cinzel&family=Comfortaa&family=Cormorant&family=DM+Serif+Display:ital@0;1&family=Dancing+Script&family=Josefin+Slab&family=Lato:ital,wght@0,300;0,900;1,300&family=Lobster&family=Londrina+Solid:wght@300&family=Luckiest+Guy&family=Marcellus+SC&family=Montserrat:ital,wght@0,300;0,900;1,200;1,300&family=Nunito+Sans:wght@200;300&family=Open+Sans&family=Playfair+Display&family=Quattrocento+Sans&family=Quattrocento:wght@700&display=swap');
+
+
+/* Color Scheme
+white: 
+Black: 
+Pink: #ff006e */
+
+.wrapper{
+    max-width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.pagelogo{
+    max-width: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-family: Montserrat;
+    font-weight: 900;
+    width: 10rem;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #ff006e;
+}
+
+header ul li:hover{
+    background-color: #ff006e;
+    color: white;
+}
+
+.name{
+    font-family: Montserrat;
+    font-size: 6rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.portfolio{
+    font-family: Montserrat;
+    font-size: 10rem;
+    font-weight: 900;
+    color: #ff006e;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    margin: 0;
+    z-index: -1000;
+    animation-name: slide;
+    animation-duration: 6s;
+    animation-delay: 1ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide{
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: -100%;
+    }
+}
+
+.designation ul{
+    position: relative;
+    top: -100px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 300;
+    font-family: Montserrat;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.myimage{
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: auto;
+    position: relative;
+    left: 500px;
+    top: -650px;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.homemain{
+    overflow: hidden;
+    max-height: 600px;
+}
+
+/* ABOUT PAGE */
+
+.aboutmain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.aboutmain div{
+    margin-top: 4rem;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.aboutimage{
+    width: 400px;
+    height: auto;
+}
+
+/* CONTACT PAGE */
+
+.contact{
+    font-family: Montserrat;
+    font-size: 1.3rem;
+    margin-top: 5rem;
+}
+
+.contactmain{
+    max-height: 500px;
+}
+
+.twos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.social-media{
+    height: 18rem;
+    font-size: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 2.5rem;
+}
+
+.social-media i:hover{
+    color: #ff006e;
+}
+
+.form{
+    background-color: white;
+}
+
+.form form{
+    margin-top: 2rem;
+}
+
+.form label{
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.form input{
+    width: 18rem;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form textarea{
+    width: 18rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form .submit{
+    width: 18rem;
+    height: 1.5rem;
+    border: none;
+    background-color: #ff006e;
+    color: white;
+}
+
+.talk{
+    position: relative;
+    top: -300px;
+    font-family: Montserrat;
+    font-size: 10rem;
+    font-weight: 900;
+    color: #ff006e;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    margin-top: 0;
+    z-index: -100;
+    animation-name: slide;
+    animation-duration: 8s;
+    animation-delay: 1ms;
+    animation-iteration-count: infinite;
+}
+
+/* PORTFOLIO PAGE */
+
+.portmain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.portmain a div img{
+    width: 35rem;
+    margin: 0;
+}
+
+/* BRANDING PAGE */
+
+.brandingmain{
+    margin-top: 3rem;
+}
+
+.brandingmain div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.brandingmain p{
+    font-family: Montserrat;
+    font-size: 1.3rem;
+}
+
+h1{
+   font-family: Montserrat;
+   text-decoration: underline #ff006e; 
+}
+
+.brandingmain div .brand1{
+    width: 25rem;
+    height: auto;
+}
+
+.brandingmain div .brand2{
+    width: 30rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.brandingmain  .brand3{
+    margin-top: 3rem;
+}
+
+.brandingmain .brand4{
+    margin-top: 3rem;
+    width: 30rem;
+}
+.back{
+    display: flex;
+    justify-content: right;
+}
+
+.back a p{
+    font-family: Montserrat;
+    font-weight: 900;
+    color: #ff006e;
+    font-size: 1.3rem;
+}
+
+/* REDESIGN PAGE */
+
+.redesignmain{
+    margin-top: 3rem;
+}
+
+.linked{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redesignmain p{
+    font-family: Montserrat;
+    font-size: 1.3rem;
+}
+
+.linked ul{
+    display: flex;
+    list-style: none;
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: 1.3rem;
+    gap: 2rem;
+}
+
+.linked ul a{
+    text-decoration: none;
+    margin: 0.5rem;
+    color: #ff006e;
+}
+
+.linked ul a:hover{
+    background-color: #ff006e;
+    color: white;
+}
+
+.thlogo{
+    width: 30rem;
+    height: auto;
+}
+
+.thstyle{
+    width: 50rem;
+}
+
+.mobdiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.mobdiv img{
+    width: 18rem;
+}
+
+.deskdiv img{
+    width: 80rem;
+    margin-bottom: 1rem;
+}
+
+/* MOTION PAGE */
+
+.motionmain{
+    margin-top: 3rem;
+}
+
+.motionmain p{
+    font-family: Montserrat;
+    font-size: 1.3rem;
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos div{
+    margin: 1rem;
+}
+
+/* GRAPHICS PAGE */
+
+.graphicsmain{
+    margin-top: 3rem;
+}
+
+.graphicsmain p{
+    font-family: Montserrat;
+    font-size: 1.3rem;
+}
+
+.posters{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.posters img{
+    width: 35rem;
+}
+
+.posters div{
+    margin: 1rem;
+}
+
+/* PROTOTYPE PAGE */
+
+
+.protomain{
+    margin-top: 3rem;
+}
+
+.protomain p{
+    font-family: Montserrat;
+    font-size: 1.3rem;
+}
+
+.proto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.proto img{
+    width: 25rem;
+    height: auto;
+}
